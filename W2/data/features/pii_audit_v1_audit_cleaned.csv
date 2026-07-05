@@ -1,0 +1,8 @@
+table,column,pii_type,decision,reason
+listing,listing_id,entity identifier,keep as entity key only,needed to define one row per listing; not a model input
+listing,host_id,entity identifier,exclude from final model inputs,links listings to the same host and could identify an account
+host,host_pseudo_id,pseudonymous identifier,exclude,stable host-level identifier with no modeling value beyond identity
+listing,license,regulatory identifier,exclude,can be identifying and is not required for demand prediction
+review,review_id,event identifier,exclude raw id; aggregate only,review-level key is not a listing feature
+review,reviewer_id,person identifier,exclude raw id; aggregate only,direct reviewer identifier must not be exposed to the model
+review,reviewer_pseudo_id,pseudonymous person identifier,exclude,stable reviewer identifier is privacy-sensitive
