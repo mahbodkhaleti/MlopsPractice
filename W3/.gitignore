@@ -1,0 +1,28 @@
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+*.pyc
+*.pyo
+*.egg-info/
+
+# Local secrets / credential handouts
+HW3_Student/hw03_credentials_handout.csv
+HW3_Student/hw03_c_handout.zip
+HW3_Student/hw03_c_handout/
+HW3_Student/SHARED.txt
+HW3_Student/HW3_B/.env
+HW3_Student/HW3_C/.env
+
+# Generated model artifacts; notebooks/scripts can recreate them
+artifacts/
+HW3_Student/HW3_A/hw03_bundle_v1.tar.gz
+HW3_Student/HW3_A/bundle/model/*
+!HW3_Student/HW3_A/bundle/model/.gitkeep
+HW3_Student/HW3_A/bundle/model/.cache/
+
+# Generated local preview pages
+screenshots/*.html
